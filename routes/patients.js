@@ -111,6 +111,7 @@ router.post("/registerPatient", verifyToken, async (req, res) => {
       image: image,
       diagnostic: req.body.diagnostic,
       symptoms: req.body.symptoms,
+      appointment: req.body.appointment,
       professional: req.body.professionalID,
     });
 
